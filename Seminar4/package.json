@@ -1,0 +1,6 @@
+{
+    "name": "country-bounds",
+    "scripts": {
+        "start": "node promise_async_await.js"
+    }
+}
