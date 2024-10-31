@@ -1,0 +1,25 @@
+# Inițializează un nou repository Git în directorul curent
+git init
+
+# Adaugă toate fișierele (sau modificările lor) din directorul curent în zona de staging pentru a fi comise
+git add .
+
+# Creează un commit cu fișierele adăugate, cu un mesaj descriptiv despre schimbări
+git commit -m "Mesaj pentru commit"
+
+# Adaugă un repository remote (la care se poate face push/pull), numit "origin"
+git remote add origin "url"
+
+# Trimite modificările locale către repository-ul remote "origin" și setează branch-ul pentru urmărire
+git push -u origin main  # Înlocuiește "main" cu branch-ul tău, dacă e altul
+
+# Creează un "pull request" - permite revizuirea și fuzionarea schimbărilor într-un branch principal (se face de obicei pe platforme Git ca GitHub/GitLab)
+
+# Actualizează repository-ul local cu modificările de pe repository-ul remote
+git pull origin main  # Aduce schimbări din branch-ul "main" de pe "origin"
+
+# Îmbină modificările din branch-ul specificat în branch-ul curent
+git merge nume_branch
+
+# Salvează temporar modificările curente (care nu sunt comise) într-un stash, permițându-ți să revii la ele mai târziu
+git stash
