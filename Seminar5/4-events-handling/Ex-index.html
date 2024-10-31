@@ -1,0 +1,40 @@
+<!--
+alegeți un element din DOM și tratați un eveniment trimis de acesta. 
+Creați un eveniment custom pe care îl veți trimite și trata odata cu tratarea evenimentului ales al elementului din DOM.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4s</title>
+</head>
+
+<body>
+    <label for="myInput">Type here to display text</label>
+    <input id="myInput" />
+    <div id="myDiv"></div>
+    <script>
+        window.onload = () => {
+            const myInput = document.getElementById('myInput');
+            const myDiv = document.getElementById('myDiv');
+
+            const myCustomEvent = (text) => new CustomEvent('myEvt', { detail: text });
+
+            myInput.oninput = (ev) => {
+                myDiv.innerText = ev.target.value
+                document.dispatchEvent(myCustomEvent(`The response is ${ev.target.value.length} characters long`))
+            }
+
+            const myEvtHandler = (event) => {
+                console.log(event.detail);
+            }
+
+            document.addEventListener('myEvt', myEvtHandler)
+        }
+    </script>
+</body>
+
+</html>

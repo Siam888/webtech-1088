@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+
+    <form id="myForm">
+        <label>Write your items here:</label>
+        <input id="myInput" />
+        <button type="submit">Add</button>
+    </form>
+    <ul id="to-do">
+
+    </ul>
+    <script>
+        window.onload = () => {
+            const form = document.getElementById('myForm');
+            const toDoList = document.querySelector('#to-do');
+            const input = document.getElementById('myInput');
+
+            form.onsubmit = (ev) => {
+                event.preventDefault();
+                const inputValue = input.value;
+
+                const listItem = document.createElement('li')
+                listItem.innerText = inputValue;
+
+                toDoList.appendChild(listItem);
+
+                form.reset();
+            }
+        }
+    </script>
+</body>
+
+</html>

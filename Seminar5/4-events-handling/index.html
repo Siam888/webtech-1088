@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WebPage</title>
+</head>
+
+<body>
+    <button id="myButton">Click Me!</button>
+</body>
+<script>
+    window.onload = function (event) {
+        const button = document.getElementById('myButton');
+        const myEvent = new Event('myEvt')
+
+        const clickHandler = () => {
+            document.dispatchEvent(myEvent);
+            console.log('Butonul a fost apasat!');
+        }
+
+        const myEventHandler = () => {
+            console.log('Evenimentul a fost gestionat!');
+        }
+
+        document.addEventListener('myEvt', myEventHandler)
+
+        // button.onclick = clickHandler;
+        button.addEventListener('click', clickHandler);
+    }
+</script>
+
+</html>

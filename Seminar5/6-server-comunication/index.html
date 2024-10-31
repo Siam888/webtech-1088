@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Communication</title>
+</head>
+<body>
+    <div id="myContainer"></div>
+    <form id="myForm">
+        <!-- Câmp ascuns pentru ID -->
+        <input type="hidden" id="idInput" />
+        
+        <!-- Câmpuri pentru nume și vârstă -->
+        <label for="name">Name</label>
+        <input name="name" id="nameInput" required />
+        
+        <label for="age">Age</label>
+        <input type="number" name="age" id="ageInput" required />
+        
+        <!-- Butoane de trimitere și resetare a form-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
