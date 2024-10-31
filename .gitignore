@@ -2,7 +2,7 @@ Seminar2_v0/
 homework-1-2024-main/
 Seminar4/Ex*
 Seminar4/*.txt
-Seminar1/
+# Seminar1/
 *.txt
 # Logs
 logs
