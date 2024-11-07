@@ -1,0 +1,16 @@
+.btn:hover {
+    color: red;
+}
+
+input:required {
+    background-color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}

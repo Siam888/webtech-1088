@@ -1,0 +1,36 @@
+/* implementează folosind float în CSS o machetă de 3 x 3 celule ca pentru jocul x si 0 ca în imaginea de mai jos (stânga) pornind de la structura HTML. */
+* {
+    margin: 0;
+}
+
+.row:not(:first-child) {
+    background-color: lightgray;
+    height: 250px;
+    width: 750px;
+}
+
+.square {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.top {
+    border-top: none;
+}
+
+.left {
+    border-left: none;
+    float: left;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.right {
+    border-right: none;
+    float: right;
+}

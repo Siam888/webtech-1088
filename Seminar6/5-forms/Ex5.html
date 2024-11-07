@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5 - forms</title>
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding-inline: 16px;
+        }
+
+        form {
+            background-color: rgb(234, 232, 232);
+            padding: 16px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 16px 0px;
+            margin: 0;
+        }
+
+        fieldset>* {
+            width: 100%;
+        }
+
+        .form-field {
+            border-radius: 5px;
+            border: 1px solid gray;
+            height: 40px;
+            box-sizing: border-box;
+            margin-top: 8px;
+            padding: 8px;
+        }
+
+        textarea.form-field {
+            height: 200px;
+            font-size: 1.5rem;
+        }
+
+        button[type=submit] {
+            background-color: rgb(18, 143, 18);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Form</h2>
+    <form>
+        <fieldset>
+            <label>First Name</label>
+            <input class="form-field" name="firstName" id="firstName" placeholder="Your name" />
+        </fieldset>
+        <fieldset>
+            <label>Last Name</label>
+            <input class="form-field" name="lastName" id="lastName" placeholder="Your last name" />
+        </fieldset>
+        <fieldset>
+            <label>Country</label>
+            <select class="form-field" name="country" id="country" placeholder="Your name">
+                <option value="Ro">Romania</option>
+                <option value="No">Norway</option>
+                <option value="Us">United States</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Subject</label>
+            <textarea class="form-field" placeholder="Write something..."></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

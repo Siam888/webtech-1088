@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            background-color: gray;
+            color: #fff;
+        }
+
+        div {
+            padding: 10px;
+            color: black;
+        }
+
+        #container {
+            border: 1px dashed #ccc;
+        }
+
+        #container div:first-child {
+            background-color: #222;
+            color: #eee;
+        }
+
+        #container div:first-child::before {
+            content: "Window: ";
+            margin-left: 10px;
+        }
+
+        #container div:last-child {
+            background-color: #999;
+            text-align: right;
+        }
+
+        #container div:last-child::after {
+            content: " Copyright 2021";
+            margin-right: 10px;
+        }
+
+        #container .main {
+            width: 100%;
+            height: 400px;
+            background-color: #fff;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        #container .main * {
+            margin: 0;
+            padding: 10px;
+            background-color: #eee;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>Title</div>
+        <div class="main">
+            <p>a</p>
+            <p>b</p>
+            <p>c</p>
+        </div>
+        <div>Footer</div>
+    </div>
+</body>
+
+</html>

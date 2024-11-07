@@ -1,0 +1,45 @@
+<!-- După ce ai testat exemplul, construiește un meniu care să fie poziționat pe orizontală. Culoarea de background să fie black, iar la hover să se faca grey. 
+ Textul fiecarei opțiuni din meniu trebuie să fie centrat atât pe verticală cât și pe orizontală ca în imaginea de mai jos. -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6 menu</title>
+
+    <style>
+        body {
+            padding: 32px;
+        }
+
+        a {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            width: 100px;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div{
+            display: flex;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact</a>
+        <a href="#">Articles</a>
+    </div>
+</body>
+
+</html>

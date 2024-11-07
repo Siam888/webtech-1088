@@ -1,0 +1,11 @@
+/* adaugă un checkbox care are o bordură de culoare roșie dacă este bifat*/
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px red;
+}
+
+/* Two, three, or four <length> values.
+
+If only two values are given, they are interpreted as <offset-x> and <offset-y> values.
+If a third value is given, it is interpreted as a <blur-radius>.
+If a fourth value is given, it is interpreted as a <spread-radius>. */
