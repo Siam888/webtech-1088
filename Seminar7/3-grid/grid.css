@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 32px;
+}
+
+.content-holder {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    /* repeat(4,25%) */
+    width: 100%;
+    height: 80%;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+.chat {
+    display: grid;
+    grid-auto-rows: max-content;
+    /* Obsolete */
+    /* grid-gap: 8px;  */
+    gap: 8px;
+    background-color: grey;
+}
+
+.chat-item {
+    height: 32px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
+}
+
+.action-bar {
+    width: 100%;
+    height: 20%;
+}

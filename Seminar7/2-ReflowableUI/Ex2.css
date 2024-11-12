@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 32px;
+}
+
+.input-group {
+    margin: 10px;
+    box-sizing: content-box;
+    /* width: 100%; */
+}
+
+.input-group input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.submit-button {
+    margin: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: green;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

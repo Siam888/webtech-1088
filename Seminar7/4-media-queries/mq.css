@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+.ui {
+    height: 100vh;
+}
+
+.menu {
+    height: 5vh;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+}
+
+.menu-item {
+    min-width: 200px;
+    border: 1px dashed gold;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        background-color: lightgray;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
