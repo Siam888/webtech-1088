@@ -16,7 +16,6 @@ statusRouter.get('/status', (req, res) => {
  * Declanșează intenționat o eroare pentru a verifica comportamentul handler-ului de erori.
  */
 statusRouter.get('/test-error', (req, res, next) => {
-    // Creează o eroare simulată și o transmite către middleware-ul de erori
     throw new Error('This is a test error!');
 });
 
