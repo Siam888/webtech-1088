@@ -17,14 +17,14 @@ body {
     height: 70%;
 }
 
-.content>.content-sidebar {
+ .content>.content-sidebar {
     display: flex;
     flex-direction: column;
     background-color: darkorchid;
     width: 15%;
 }
 
-.content>.content-panel {
+ .content>.content-panel { 
     background-color: brown;
     width: 100%;
 }
@@ -40,4 +40,4 @@ body {
     background-color: darkkhaki;
     height: 30%;
     width: 100%;
-}
+} 
