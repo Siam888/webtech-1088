@@ -1,9 +1,0 @@
-Instructiuni
-    1. Rulati npm install pentru a instala dependintele necesare
-
-ToDo:
-    1. adaugă un câmp suplimentar “salary”, cu o valoare default de 0 și cu o validare pentru valoarea minimă de 0.
-    2. adaugă un validator suplimentar pe entitate pentru ca numele să aibă între 3 și 10 caractere.
-    3. implementează ștergerea unei înregistrări pe un nou endpoint.
-    4. implementează o condiție de filtrare a angajaților după nume.
-    5. implementează o sortare (ordonare) pentru query-ul get all employees, în funcție de un câmp primit ca și query param.
