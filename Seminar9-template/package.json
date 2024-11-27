@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "debug": "nodemon --inspect index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
