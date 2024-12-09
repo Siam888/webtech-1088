@@ -1,0 +1,17 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Web Tech S10 - Part 1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "ASE",
+  "license": "ISC",
+  "repository": {},
+  "dependencies": {
+    "express": "^4.21.1",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  }
+}
