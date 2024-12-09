@@ -1,0 +1,6 @@
+1. Implementați GET pentru copiii unui anumit părinte. 
+2. Implementați metoda GET pentru obținerea unui anumit copil al unui părinte. 
+3. Implementați ștergerea unei entități copil. 
+4. Implementați cererea GET pentru lista de cursuri a unui student (GET /universities/:universityId/students/:studentId/enrollments)
+5. Implementați export (se vor extrage parintii cu copiii lor de forma GET / care va intoarce in body un array de university unde university contine un array de students, courses și enrollements. 
+Enrollments sunt reprezentate ca perechi de ID student si course)
