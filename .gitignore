@@ -2,6 +2,9 @@ Seminar2_v0/
 homework-1-2024-main/
 Seminar4/Ex*
 Seminar4/*.txt
+Seminar12-Template
+Seminar12-Test
+Seminar11-Template
 /*.txt
 # Seminar1/
 *.txt
@@ -137,3 +140,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 Seminar4/test.js
+Seminar11/Seminar11-Template.zip

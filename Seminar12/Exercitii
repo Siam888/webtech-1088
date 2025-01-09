@@ -1,0 +1,4 @@
+1. creați o nouă componentă “About” și atașați-o pe ruta “/about”. (Router)
+2. adăugați o acțiune care să reseteze starea curentă la starea inițială. (Reducer)
+3. implementați posibilitatea de a ștege una dintre notițe printr-un buton. (Redux)
+4. implementați posibilitatea de a șterge o notița (comunicând cu serverul). (Redux-Async)
